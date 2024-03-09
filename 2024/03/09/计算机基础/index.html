@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.18.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="1 计算机发展历史1.1 早期发展历史算盘 → 步进计算器→ 差分机 → 分析机 → 打孔卡片制表机  1.2 电子计算机继电器 → 真空管 → 晶体管 小知识：计算机里的晶体管小于50nm，并且每秒可切换上百万次，工作几十年。很多晶体管和半导体开发在圣克拉拉谷，位于旧金山和圣河西之间，由于制造半导体最常见的材料是硅，由此这个地方被称为“硅谷”。并且William Shockley搬过去创建了肖克">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机基础">
+<meta property="og:url" content="http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1 计算机发展历史1.1 早期发展历史算盘 → 步进计算器→ 差分机 → 分析机 → 打孔卡片制表机  1.2 电子计算机继电器 → 真空管 → 晶体管 小知识：计算机里的晶体管小于50nm，并且每秒可切换上百万次，工作几十年。很多晶体管和半导体开发在圣克拉拉谷，位于旧金山和圣河西之间，由于制造半导体最常见的材料是硅，由此这个地方被称为“硅谷”。并且William Shockley搬过去创建了肖克">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/intel4004cpu.png">
+<meta property="og:image" content="http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E5%AE%8C%E6%95%B4%E7%9A%84cpu%E6%9E%B6%E6%9E%84.png">
+<meta property="article:published_time" content="2024-03-09T08:40:02.000Z">
+<meta property="article:modified_time" content="2024-03-09T19:09:05.003Z">
+<meta property="article:author" content="Owen he">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/intel4004cpu.png">
+
+
+<link rel="canonical" href="http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/","path":"2024/03/09/计算机基础/","title":"计算机基础"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>计算机基础 | Hexo</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">1.</span> <span class="nav-text">1 计算机发展历史</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1-%E6%97%A9%E6%9C%9F%E5%8F%91%E5%B1%95%E5%8E%86%E5%8F%B2"><span class="nav-number">1.1.</span> <span class="nav-text">1.1 早期发展历史</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2-%E7%94%B5%E5%AD%90%E8%AE%A1%E7%AE%97%E6%9C%BA"><span class="nav-number">1.2.</span> <span class="nav-text">1.2 电子计算机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-1-%E6%99%B6%E4%BD%93%E7%AE%A1%E7%9A%84%E6%9B%B4%E9%AB%98%E5%B1%82%E6%8A%BD%E8%B1%A1"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.2.1 晶体管的更高层抽象</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AD%98%E5%82%A8%E4%B8%8E%E8%A1%A8%E7%A4%BA%E6%95%B0%E6%8D%AE"><span class="nav-number">2.</span> <span class="nav-text">2 计算机存储与表示数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%95%B0%E6%8D%AE"><span class="nav-number">2.1.</span> <span class="nav-text">2.1 二进制表示数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-1-%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E5%AD%97%E6%AF%8D"><span class="nav-number">2.1.1.</span> <span class="nav-text">2.1.1 二进制表示字母</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-2-%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%AC%A7%E6%B4%B2%E5%AD%97%E7%AC%A6"><span class="nav-number">2.1.2.</span> <span class="nav-text">2.1.2 二进制表示欧洲字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-3-%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%B1%89%E5%AD%97"><span class="nav-number">2.1.3.</span> <span class="nav-text">2.1.3 二进制表示汉字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-4-%E4%BA%8C%E8%BF%9B%E5%88%B6%E8%A1%A8%E7%A4%BA%E6%89%80%E6%9C%89%E6%96%87%E5%AD%97"><span class="nav-number">2.1.4.</span> <span class="nav-text">2.1.4 二进制表示所有文字</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-%E8%BF%90%E7%AE%97%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0%E6%8D%AE"><span class="nav-number">2.2.</span> <span class="nav-text">2.2 运算二进制数据</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-1-%E7%AE%97%E6%9C%AF%E5%8D%95%E5%85%83"><span class="nav-number">2.2.1.</span> <span class="nav-text">2.2.1 算术单元</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-2-%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83"><span class="nav-number">2.2.2.</span> <span class="nav-text">2.2.2 逻辑单元</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-%E4%BF%9D%E5%AD%98%E6%95%B0%E6%8D%AE"><span class="nav-number">2.3.</span> <span class="nav-text">2.3 保存数据</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%A4%84%E7%90%86%E6%95%B0%E6%8D%AE"><span class="nav-number">3.</span> <span class="nav-text">3 计算机处理数据</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-%E4%B8%AD%E5%A4%AE%E5%A4%84%E7%90%86%E5%99%A8"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 中央处理器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2-%E9%87%8D%E8%A6%81%E7%BB%84%E4%BB%B6"><span class="nav-number">3.2.</span> <span class="nav-text">3.2 重要组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3-CPU%E6%89%A7%E8%A1%8C%E6%9F%90%E4%B8%AA%E7%A8%8B%E5%BA%8F%E8%BF%87%E7%A8%8B"><span class="nav-number">3.3.</span> <span class="nav-text">3.3 CPU执行某个程序过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4-%E6%97%B6%E9%92%9F%E5%91%A8%E6%9C%9F"><span class="nav-number">3.4.</span> <span class="nav-text">3.4 时钟周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5-%E7%AC%AC%E4%B8%80%E4%B8%AACPU"><span class="nav-number">3.5.</span> <span class="nav-text">3.5 第一个CPU</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6-%E6%8C%87%E4%BB%A4%E5%92%8C%E7%A8%8B%E5%BA%8F"><span class="nav-number">3.6.</span> <span class="nav-text">3.6 指令和程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7-%E9%AB%98%E7%BA%A7CPU%E8%AE%BE%E8%AE%A1"><span class="nav-number">3.7.</span> <span class="nav-text">3.7 高级CPU设计</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%BF%90%E8%A1%8C%E7%A8%8B%E5%BA%8F%E7%BC%96%E5%86%99"><span class="nav-number">4.</span> <span class="nav-text">4 计算机运行程序编写</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E5%8F%91%E5%B1%95"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 编程语言发展</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 数据结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 软件工程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-1-%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3"><span class="nav-number">4.3.1.</span> <span class="nav-text">4.3.1 编程思想</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-2-%E7%BC%96%E7%A8%8B%E5%B7%A5%E5%85%B7"><span class="nav-number">4.3.2.</span> <span class="nav-text">4.3.2 编程工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-3-%E4%BB%A3%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7"><span class="nav-number">4.3.3.</span> <span class="nav-text">4.3.3 代码管理工具</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-4-%E6%B5%8B%E8%AF%95"><span class="nav-number">4.3.4.</span> <span class="nav-text">4.3.4 测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="nav-number">5.</span> <span class="nav-text">5 操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1-%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">5.1.</span> <span class="nav-text">5.1 基本概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2-%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98"><span class="nav-number">5.2.</span> <span class="nav-text">5.2 虚拟内存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3-Unix%E7%B3%BB%E7%BB%9F"><span class="nav-number">5.3.</span> <span class="nav-text">5.3 Unix系统</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C"><span class="nav-number">6.</span> <span class="nav-text">6 计算机网络</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-%E5%B1%80%E5%9F%9F%E7%BD%91%E5%92%8C%E5%B9%BF%E5%9F%9F%E7%BD%91"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 局域网和广域网</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE"><span class="nav-number">6.2.</span> <span class="nav-text">6.2 传输数据</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-3-DNS%E5%9F%9F%E5%90%8D%E7%B3%BB%E7%BB%9F"><span class="nav-number">6.3.</span> <span class="nav-text">6. 3 DNS域名系统</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-4-OSI-%E5%BC%80%E5%8F%91%E5%BC%8F%E7%B3%BB%E7%BB%9F%E4%BA%92%E8%81%94%E9%80%9A%E4%BF%A1%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B"><span class="nav-number">6.4.</span> <span class="nav-text">6.4 OSI-开发式系统互联通信参考模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-5-%E4%B8%87%E7%BB%B4%E7%BD%91"><span class="nav-number">6.5.</span> <span class="nav-text">6.5 万维网</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8"><span class="nav-number">7.</span> <span class="nav-text">7 计算机安全</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#7-1-%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%AE%89%E5%85%A8%E7%9B%AE%E6%A0%87"><span class="nav-number">7.1.</span> <span class="nav-text">7.1 计算机安全目标</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-2-%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81"><span class="nav-number">7.2.</span> <span class="nav-text">7.2 身份认证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-3-%E6%9D%83%E9%99%90%E6%A0%A1%E9%AA%8C"><span class="nav-number">7.3.</span> <span class="nav-text">7.3 权限校验</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-4-%E9%BB%91%E5%AE%A2%E4%B8%8E%E6%94%BB%E5%87%BB"><span class="nav-number">7.4.</span> <span class="nav-text">7.4 黑客与攻击</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-5-%E5%8A%A0%E5%AF%86"><span class="nav-number">7.5.</span> <span class="nav-text">7.5 加密</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D"><span class="nav-number">7.5.0.1.</span> <span class="nav-text">数字签名</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%92%8C%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD"><span class="nav-number">8.</span> <span class="nav-text">8 机器学习和人工智能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89"><span class="nav-number">9.</span> <span class="nav-text">9 计算机视觉</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#10-%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86%EF%BC%9ANLP"><span class="nav-number">10.</span> <span class="nav-text">10 然语言处理：NLP</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#11-%E6%9C%BA%E5%99%A8%E4%BA%BA"><span class="nav-number">11.</span> <span class="nav-text">11 机器人</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#12-%E5%A5%87%E7%82%B9%EF%BC%8C%E5%A4%A9%E7%BD%91%EF%BC%8C%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9A%84%E6%9C%AA%E6%9D%A5"><span class="nav-number">12.</span> <span class="nav-text">12 奇点，天网，计算机的未来</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Owen he</p>
+  <div class="site-description" itemprop="description">some notes</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Owen he">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+      <meta itemprop="description" content="some notes">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="计算机基础 | Hexo">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          计算机基础
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2024-03-09 16:40:02" itemprop="dateCreated datePublished" datetime="2024-03-09T16:40:02+08:00">2024-03-09</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2024-03-10 03:09:05" itemprop="dateModified" datetime="2024-03-10T03:09:05+08:00">2024-03-10</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="1-计算机发展历史"><a href="#1-计算机发展历史" class="headerlink" title="1 计算机发展历史"></a>1 计算机发展历史</h1><h2 id="1-1-早期发展历史"><a href="#1-1-早期发展历史" class="headerlink" title="1.1 早期发展历史"></a>1.1 早期发展历史</h2><p>算盘 → 步进计算器→ 差分机 → 分析机 → 打孔卡片制表机 </p>
+<h2 id="1-2-电子计算机"><a href="#1-2-电子计算机" class="headerlink" title="1.2 电子计算机"></a>1.2 电子计算机</h2><p>继电器 → 真空管 → 晶体管</p>
+<p>小知识：计算机里的晶体管小于50nm，并且每秒可切换上百万次，工作几十年。很多晶体管和半导体开发在圣克拉拉谷，位于旧金山和圣河西之间，由于制造半导体最常见的材料是硅，由此这个地方被称为“硅谷”。并且William Shockley搬过去创建了肖克利半导体，里面的员工后来成立了仙童半导体，而这里面的员工后来创立了英特尔。</p>
+<p>计算机出现的背景：计算量需求的倍增</p>
+<h3 id="1-2-1-晶体管的更高层抽象"><a href="#1-2-1-晶体管的更高层抽象" class="headerlink" title="1.2.1 晶体管的更高层抽象"></a>1.2.1 晶体管的更高层抽象</h3><p>在计算机中，当电流流过时，为闭合状态，表示true（1），当没有电流流过时，为断开状态，表示false（0）。晶体管也可以用两种状态开&#x2F;关表示。</p>
+<ol>
+<li>布尔逻辑和逻辑门<ul>
+<li>布尔变量的值是true和false。</li>
+<li>布尔代数中几个操作，分别是分别为非门，与门，或门，异或门。</li>
+</ul>
+</li>
+</ol>
+<h1 id="2-计算机存储与表示数据"><a href="#2-计算机存储与表示数据" class="headerlink" title="2 计算机存储与表示数据"></a>2 计算机存储与表示数据</h1><h2 id="2-1-二进制表示数据"><a href="#2-1-二进制表示数据" class="headerlink" title="2.1 二进制表示数据"></a>2.1 二进制表示数据</h2><p>二进制中，一个1或0称为一个<strong>位（bit）</strong>。对于8位二进制数，最小为0，最大为255。由于8位二进制数太过常见，因此将其称为<strong>字节（byte）</strong>。而32位和64位操作系统，指的是操作系统是一块块处理数据的，而每块大小是32位或者64位。</p>
+<ul>
+<li>32位就是32bit，即一次可以处理4个字节的数据；64位就是64bit，即一次可以处理8个字节的数据；</li>
+<li>32位的操作系统最多支持4GB的内存，实质是3.25GB；而64位系统理论上能够支持无限大小的内存，只要有相对应的产品和足够的内存插槽；</li>
+</ul>
+<h3 id="2-1-1-二进制表示字母"><a href="#2-1-1-二进制表示字母" class="headerlink" title="2.1.1 二进制表示字母"></a>2.1.1 二进制表示字母</h3><p>给字母编号。1963年发明了<strong>ASCII（美国信息交换标准代码）</strong>，当时为7位二进制数，能够存放128个不同的值，可以用来表示大小写字母、数字、标点符号等等，并且其中存储了特殊字符，比如换行符、制表符等等。</p>
+<h3 id="2-1-2-二进制表示欧洲字符"><a href="#2-1-2-二进制表示欧洲字符" class="headerlink" title="2.1.2 二进制表示欧洲字符"></a>2.1.2 二进制表示欧洲字符</h3><p><strong>拓展ASCII编码</strong>：用于表示更多的欧洲文字，用8个位存储数据，一共可以表示256个字符</p>
+<h3 id="2-1-3-二进制表示汉字"><a href="#2-1-3-二进制表示汉字" class="headerlink" title="2.1.3 二进制表示汉字"></a>2.1.3 二进制表示汉字</h3><p><strong>GBK&#x2F;GB2312&#x2F;GB18030：</strong>表示汉字。GBK&#x2F;GB2312表示简体中文，GB18030表示繁体中文。</p>
+<h3 id="2-1-4-二进制表示所有文字"><a href="#2-1-4-二进制表示所有文字" class="headerlink" title="2.1.4 二进制表示所有文字"></a>2.1.4 二进制表示所有文字</h3><p>问题：由于每个国家发明了<strong>多字节编码方案</strong>，可以使用多个字节来编码字符，但各个国建之间的编码方案不互相兼容</p>
+<p>解决办法：建立<strong>Unicode</strong>来统一所有编码的标准，设计于1992年，解决了不同国家不同标准的问题。最常见的Unicode是16位的，有超过一百万个位置来编码字符，编码所有语言的所有字符都足够了，并且还有位置放数学符号、Emoji等等。</p>
+<h2 id="2-2-运算二进制数据"><a href="#2-2-运算二进制数据" class="headerlink" title="2.2 运算二进制数据"></a>2.2 运算二进制数据</h2><p>背景：表示和存储是计算机的重要功能，要想有实际意义还得进行运算解决问题，这时候需要计算机的<strong>算术逻辑单元（Arithmetic and Logic Unit，ALU）</strong>处理。ALU是计算机的数学大脑，是计算机里负责所有运算的组件，所以基本其他所有部件都会用到它。</p>
+<p>ALU有两个单元，一个<strong>算术单元（Arithmetic Unit）</strong>，一个<strong>逻辑单元（Logic Unit）</strong>。</p>
+<h3 id="2-2-1-算术单元"><a href="#2-2-1-算术单元" class="headerlink" title="2.2.1 算术单元"></a>2.2.1 算术单元</h3><ol>
+<li>半加器：XOR（存SUM）+ AND（存CARRY）→ 半加器（处理两位数字相加） → 封装成单独组件</li>
+<li>全加器：两个半加器 + OR → 全加器（处理多位数字相加）→ 封装成单独组件</li>
+</ol>
+<p>通过连接1个半加器和n-1个全加器，就能构建n位加法器。通过叠加更多的加法器，能够避免溢出的出现，但是会出现更多的逻辑门，而且每次进位都要一些时间，而计算是串行的，所以消耗的时间也越长，到如今的每秒几十亿次运算时就会造成影响，所以现代计算机用的加法电路有所不同，称为<strong>超前进位加法器（Carry-Look-Ahead Adder）。</strong></p>
+<p><strong>ALU通常支持以下操作：</strong>加法、带进位的加法、减法、带借位的减法、取反、增1、减1、数字无改变通过。这些操作也是由逻辑门构成的。<strong>注意：</strong>简单的ALU并不支持乘法，而是把乘法用多次加法来实现，而更好的处理器有专门做乘法的算数单元。</p>
+<h3 id="2-2-2-逻辑单元"><a href="#2-2-2-逻辑单元" class="headerlink" title="2.2.2 逻辑单元"></a>2.2.2 逻辑单元</h3><p><strong>逻辑单元：</strong>执行逻辑操作，比如AND、OR和NOT操作，也能做简单的数值测试，比如数字是不是负数。</p>
+<p>对整个8位ALU进行抽象，用一个特殊的V形符号进行表示。其中有两个<strong>8位输入</strong>，并且有一个4位<strong>操作码（Operation Code）</strong>来告诉ALU对输入执行什么操作，比如1000表示加法命令，1100表示减法命令，然后有一个<strong>8位输出</strong>。同时ALU会输出一系列1位<strong>标志（FLAG）</strong>，来表示特定状态，比如我们可以计算A-B，然后通过ZERO来判断结果是否为零来判断A与B是否相等，通过NEGATIVE来判断A是否小于B；然后OVERFLOW连接到加法器的进位，来判断是否出现溢出。</p>
+<h2 id="2-3-保存数据"><a href="#2-3-保存数据" class="headerlink" title="2.3 保存数据"></a>2.3 保存数据</h2><ol>
+<li><p>锁存器：存储1和0的电路，它”锁定”了一个值，放入数据的动作叫 “写入” ，拿出数据的动作叫 “读取”。</p>
+</li>
+<li><p>门锁</p>
+<ul>
+<li><p>解决了寄存器中需要同时用两条线（”设置”、”复位”）输入的麻烦</p>
+</li>
+<li><p>为了使用更方便，只用1根线控制数据输入（数据输入线），另一根线用来“启动”内存（允许写入线）</p>
+</li>
+</ul>
+</li>
+<li><p>寄存器：</p>
+<ul>
+<li><p>由1 组并排的<strong>锁存器，及门锁组成</strong>，解决了 1 个寄存器只能存储 1 bit 数据的尴尬</p>
+</li>
+<li><p>位宽：寄存器能存一个数字，位宽是指这个数字的位数，发展历程：8位-&gt;16位-&gt;32位-&gt;64位</p>
+</li>
+<li><p>举例：例如 64 位寄存器需要 64 根数据线、64根连接到输出端，1根用于启动所有寄存器的数据输入线，共计129 根</p>
+</li>
+</ul>
+</li>
+<li><p>门锁矩阵：</p>
+<ul>
+<li>在矩阵中，以网格形式排列锁存器（n*n 门锁矩阵可存放n^2个锁存器），解决了随着寄存器的位宽增大，所需线的根数越多的问题</li>
+<li>位址：是指锁存器在矩阵中的行数与列数.若要启动某个寄存器，打开相应的行线和列线即可</li>
+<li>多路复用器：一组电线，可将输入的二进制地址转换为行和列，进而启用矩阵中某个锁存器</li>
+<li>举例：例如 64 位寄存器需要 8x8条用于选择锁存器的线、数据线x1、允许写入线x1、允许读取线x1，共 35条</li>
+</ul>
+</li>
+<li><p>内存：</p>
+<ul>
+<li>存储模块+电路 → 组成内存方块 → n个内存方块并排放置 → 一个可寻址内存</li>
+<li>随机存取存储器：RAM （Random Access Memory），由一系列矩阵以及电路组成的器件，可根据地址来写入、读取数据</li>
+<li>SRAM （Static Random Access Memory）是锁存器的更高层抽象，还有很多其他类型的RAM，比如DRAM、闪存和NVRAM，它们的功能和SRAM相似，但是使用不同的电路存放单个位。但是根本上，这些技术都是<strong>矩阵层层嵌套</strong>来存储大量信息。</li>
+</ul>
+</li>
+</ol>
+<h1 id="3-计算机处理数据"><a href="#3-计算机处理数据" class="headerlink" title="3 计算机处理数据"></a>3 计算机处理数据</h1><h2 id="3-1-中央处理器"><a href="#3-1-中央处理器" class="headerlink" title="3.1 中央处理器"></a>3.1 中央处理器</h2><p>CPU &#x3D; 寄存器 +控制单元 + ALU+时钟组成，与 RAM 配合，执行计算机程序<br>CPU 和 RAM 之间用”地址线”、”数据线”和“允许读&#x2F;写线”进行通信</p>
+<h2 id="3-2-重要组件"><a href="#3-2-重要组件" class="headerlink" title="3.2 重要组件"></a>3.2 重要组件</h2><p>指令表：给 CPU 支持的所有指令分配ID，其由指令、描述、操作码、地址或寄存器组成<br>指令寄存器：用于存储当前指令，即具体的指令代码<br>指令地址寄存器：用于追踪程序的运行进度、存储当前指令的内存地址、让RAM 按顺序将数据交给指令寄存器</p>
+<h2 id="3-3-CPU执行某个程序过程"><a href="#3-3-CPU执行某个程序过程" class="headerlink" title="3.3 CPU执行某个程序过程"></a>3.3 CPU执行某个程序过程</h2><ol>
+<li>CPU的第一个阶段叫<strong>取指令阶段（Fetch Phase）</strong>：<ul>
+<li>RAM连接到指令地址寄存器，将“指令地址寄存器”的地址发给 RAM（允许读取）</li>
+<li>RAM 将该地址所对应的数据发给“指令寄存器”</li>
+</ul>
+</li>
+<li>取到指令后，CPU就会进入<strong>解码阶段（Decode Phase）</strong>：<ul>
+<li>指令寄存器将获取的数据发送给控制单元解码，控制单元也是由逻辑门组成</li>
+<li>逻辑电路解码来确认是何种操作码</li>
+</ul>
+</li>
+<li><strong>执行阶段（Execute Phase）</strong>：<ul>
+<li>将数据存入寄存器</li>
+<li>将数据和寄存器中的数据进行运算</li>
+<li>将寄存器中的数据写入内存</li>
+</ul>
+</li>
+</ol>
+<h2 id="3-4-时钟周期"><a href="#3-4-时钟周期" class="headerlink" title="3.4 时钟周期"></a>3.4 时钟周期</h2><p>CPU完成一次取指-解码-执行称为一个<strong>时钟周期（Clock Cycle）</strong></p>
+<p>完成时钟周期的速度叫<strong>时钟速度（Clock Speed）</strong>，单位是赫兹，用来表示频率的单位，表示1秒完成了几次“取指-解码-执行”的过程。而超频，指的是修改时钟速度来加快CPU执行指令的速度，但是超频太多会让CPU过热或产生乱码，因为信号传输也需要一定时间，使得信号跟不上时钟。</p>
+<h2 id="3-5-第一个CPU"><a href="#3-5-第一个CPU" class="headerlink" title="3.5 第一个CPU"></a>3.5 第一个CPU</h2><p>第一个单芯片CPU是1971年发布的4位CPU-Intel 4004，它的微架构如下图所示，有16个8位寄存器，4个指令地址寄存器，时钟速度达到了740kHz，即每秒74万次。</p>
+<p><img src="/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/intel4004cpu.png"></p>
+<p>现在对控制单元加入时钟后才变成一个完整的独立组件，可以得到一个CPU芯片。而RAM是CPU外面的独立组件，CPU和RAM之间通过地址线、数据线、允许读取线和允许写入线来进行通信。</p>
+<p><img src="/2024/03/09/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/%E5%AE%8C%E6%95%B4%E7%9A%84cpu%E6%9E%B6%E6%9E%84.png"></p>
+<h2 id="3-6-指令和程序"><a href="#3-6-指令和程序" class="headerlink" title="3.6 指令和程序"></a>3.6 指令和程序</h2><p>想要CPU执行更多更复杂的功能，就需要给他设计更多的指令。</p>
+<p>在Intel 4004中，它支持46个指令，使用8位立即值来执行JUMP，所以可以表示更多的内存地址。处理器从1971年至今，现代CPU比如Intel Core i7含有上千个指令和指令变体，长度从1到15字节。</p>
+<ul>
+<li>指令集：记录指令名称、用法、操作码以及所需 RAM 地址位数的表格</li>
+<li>指令的分类：<ul>
+<li>LOAD 指令：例如指令 LOAD_A，通过数据线将数据传至寄存器A</li>
+<li>STORE 指令：例如指令 STORE_B，把寄存器 B 的值存入特定内存地址</li>
+<li>ADD 指令：例如指令 ADD B A，告诉 ALU 把寄存器 B 和寄存器 A 中的数字相加，然后将结果存到寄存器A中</li>
+<li>SUB 指令：例如指令 SUB B A，告诉 ALU 把寄存器 B 和寄存器 A 中的数字相减，然后将结果存到寄存器A中</li>
+<li>JUMP 指令：遇到指令 JUMP 时，程序会跳转至对应的 RAM 地址读取数据，也可以有条件跳转（如 JUMP-negative），其前提条件为：ALU的负数标志为 True</li>
+<li>HALT 指令：遇到指令 HALT 时，程序运行结束</li>
+</ul>
+</li>
+</ul>
+<h2 id="3-7-高级CPU设计"><a href="#3-7-高级CPU设计" class="headerlink" title="3.7 高级CPU设计"></a>3.7 高级CPU设计</h2><ol>
+<li>提高CPU性能<ul>
+<li>早期通过减少晶体管的切换时间，来提升 CPU 速度，但很快该方法到达了极限</li>
+<li>后来给 CPU 设计了专门除法电路，复杂电路来做复杂操作：如游戏、视频解码（例如 MMX、 3DNOW、 SSE 处理器）</li>
+</ul>
+</li>
+<li>设计缓存：提高数据传输效率<ul>
+<li>在 CPU 内部设置了一小块内存，称为缓存，让 RAM 可以一次传输一批数据到 CPU 中，以防 CPU 空等数据（从RAM 到 CPU 的数据传输有延迟）</li>
+</ul>
+</li>
+<li>提高CPU工作效率：设计指令流水线，让取址→解码→执行三个步骤同时进行，并行执行指令，提升CPU性能</li>
+<li>设计多核处理器：一个 CPU 芯片中，有多个独立处理单元，但因为它们整合紧密，可以共享一些资源、同时运行多个指令流</li>
+<li>超级计算机：在一台计算机中，用无数个 CPU，可以做非常非常复杂的运算，如模拟宇宙形成．例如中国的”神威-太湖之光”</li>
+</ol>
+<h1 id="4-计算机运行程序编写"><a href="#4-计算机运行程序编写" class="headerlink" title="4 计算机运行程序编写"></a>4 计算机运行程序编写</h1><h2 id="4-1-编程语言发展"><a href="#4-1-编程语言发展" class="headerlink" title="4.1 编程语言发展"></a>4.1 编程语言发展</h2><ol>
+<li><p>机器语言：计算机只能处理二进制，称为<strong>机器语言（Machine Language）</strong>或<strong>机器码（Machine Code）</strong>。</p>
+</li>
+<li><p><strong>汇编语言（Assembly Language）</strong>：每个操作码分配一个简单名字，称为<strong>助记符（Mnemonics）</strong>，助记符后跟数据，形成完整的指令。汇编器读取汇编语言写的程序，然后转换成机器码。<strong>汇编码和底层硬件连接很密切</strong>，程序员仍需要思考使用什么寄存器和内存地址。</p>
+</li>
+<li><p>高级语言：霍普在1952年创造了第一个<strong>编译器（Compiler）</strong>，编译器专门把高级语言转换成低级语言（比如汇编或机器码）。由此，<strong>高级编程语言就不用管寄存器或内存位置，编译器会解决这些细节</strong>。</p>
+</li>
+</ol>
+<h2 id="4-2-数据结构"><a href="#4-2-数据结构" class="headerlink" title="4.2 数据结构"></a>4.2 数据结构</h2><p>数组、字符串、矩阵（多维数组）、结构体、链表、树、图</p>
+<h2 id="4-3-软件工程"><a href="#4-3-软件工程" class="headerlink" title="4.3 软件工程"></a>4.3 软件工程</h2><p>为了写大型程序，程序员用各种工具和方法，所有这些形成了软件工程学科。</p>
+<h3 id="4-3-1-编程思想"><a href="#4-3-1-编程思想" class="headerlink" title="4.3.1 编程思想"></a>4.3.1 编程思想</h3><ol>
+<li>早期（面向过程开发）：将大项目分解成小<strong>函数</strong>可以让很多人同时工作，由此他们无需关心整个项目，只要关心自己的函数就好了。</li>
+<li>面向对象开发：将函数抽象为对象的动作</li>
+<li>面向接口开发：不同团队之间，团队根据<strong>文档（Documentation）</strong>来帮助理解代码都做什么，以及定义好的<strong>程序编程接口（Application Programming Interface，API）</strong>。</li>
+</ol>
+<h3 id="4-3-2-编程工具"><a href="#4-3-2-编程工具" class="headerlink" title="4.3.2 编程工具"></a>4.3.2 编程工具</h3><p>现代软件开发者会使用专门的工具来写代码，工具里集成了很多功能帮助写代码、整理、编译和测试，这些软件称为<strong>集成开发环境（Integrated Development Environments，IDE）</strong>。</p>
+<h3 id="4-3-3-代码管理工具"><a href="#4-3-3-代码管理工具" class="headerlink" title="4.3.3 代码管理工具"></a>4.3.3 代码管理工具</h3><p><strong>源代码管理（Source Control）</strong>。公司会将代码放在一个中心服务器上，称为<strong>代码仓库（Code Repository）</strong>。</p>
+<h3 id="4-3-4-测试"><a href="#4-3-4-测试" class="headerlink" title="4.3.4 测试"></a>4.3.4 测试</h3><p>测试可统称为<strong>质量保证测试（Quality Assurance Testing，QA）</strong>。<strong>“alpha version”</strong>软件一般很粗糙，错误很多，经常只在公司内部操作，而<strong>“beta version”</strong>软件指的是软件接近完成，但不是完全测试通过，公司有时会向公众发布beta版，以帮助发现问题，用户就像免费的QA团队。</p>
+<h1 id="5-操作系统"><a href="#5-操作系统" class="headerlink" title="5 操作系统"></a>5 操作系统</h1><h2 id="5-1-基本概念"><a href="#5-1-基本概念" class="headerlink" title="5.1 基本概念"></a>5.1 基本概念</h2><ul>
+<li>它也是个软件程序，有操作硬件的特殊权限，可以运行和管理其他程序。</li>
+<li>操作系统一般是开机第一个启动的程序，其他所有程序由操作系统来启动。</li>
+<li>操作系统提供API来抽象硬件，叫设备驱动程序，程序员可用标准化机制，和输入输出硬件I&#x2F;O交互。如程序员调用print，操作系统就会处理输到纸上的具体细节。</li>
+<li>第一个超级计算机，Altas，开发人员机器处理数据很快，想最大限度利用它。所以用的操作系统可批处理，能自动加载程序，还能在单个CPU上同时运行几个程序。</li>
+</ul>
+<h2 id="5-2-虚拟内存"><a href="#5-2-虚拟内存" class="headerlink" title="5.2 虚拟内存"></a>5.2 虚拟内存</h2><ul>
+<li>操作系统会给每个程序分配专属内存块，为了更高效率的利用内存，在物理上是不连续的，但是操作系统会建立虚拟内存到物理内存到映射，所以程序猿可以假定内存是从0开始的。</li>
+<li>虚拟内存的这种机制，使得程序的内存大小可以灵活增减，即动态内存分配。</li>
+<li>给程序分配专用的内存范围，同时运行多个程序，更灵活，隔离起来会更好。如果一个程序出错，只会捣乱自己的内存，不会影响到其他的程序，这就叫内存保护。其中隔离病毒也可以。</li>
+<li>补充知识：<ul>
+<li>虚拟内存别称虚拟存储器（Virtual Memory）。电脑中所运行的程序均需经由内存执行，若执行的程序占用内存很大或很多，则会导致内存消耗殆尽。为解决该问题，运用虚拟内存技术，即匀出一部分硬盘空间来充当内存使用。</li>
+</ul>
+</li>
+</ul>
+<h2 id="5-3-Unix系统"><a href="#5-3-Unix系统" class="headerlink" title="5.3 Unix系统"></a>5.3 Unix系统</h2><ol>
+<li>操作系统的核心功能，比如内存管理，多任务和输入输出处理，这个称为<strong>内核（Kernel）</strong>。</li>
+<li>一些有用的工具，但是他们不是内核的一部分，比如程序和运行库。</li>
+</ol>
+<p>现代的操作系统包含了多任务、虚拟内存和内存保护机制，因此可以同时运行多个程序。</p>
+<h1 id="6-计算机网络"><a href="#6-计算机网络" class="headerlink" title="6 计算机网络"></a>6 计算机网络</h1><h2 id="6-1-局域网和广域网"><a href="#6-1-局域网和广域网" class="headerlink" title="6.1 局域网和广域网"></a>6.1 局域网和广域网</h2><ol>
+<li>局域网的计算机是怎么沟通？<ul>
+<li>通过光纤，传递2进制信号，头部信息会包含要去往的<strong>MAC地址</strong>，每一台计算机的MAC地址都是唯一的，所以在同一网络下的计算机接收到信号的时候，解析头部信息，看看这个接收方的MAC地址，是否是自己就能鉴别是否要接受该条信息。</li>
+</ul>
+</li>
+<li>全球的路由器协同工作，找出最高效的线路，用各种标准协议传输数据，比如<strong>因特网控制信息协议（Internet Control Message Protocol，ICMP）</strong>和<strong>边界网关协议（Border Gateway Protocol，BGP）</strong>。</li>
+<li>计算机接入局域网，WIFI路由器会连着所有的设备，组成局域网 <ul>
+<li>→ 局域网再连接到广域网。WAN的路由器一半属于互联网服务提供商，简称ISP。</li>
+<li>→ 广域网里，先连接到一个区域性路由器，这路由器可能覆盖一个街区，然后连接到一个更大的WAN，可能覆盖整个城市。</li>
+<li>→ 可能再跳几次，但最终会到达互联网主干。互联网主干由一群超大型、带宽超高路由器组成。</li>
+</ul>
+</li>
+</ol>
+<h2 id="6-2-传输数据"><a href="#6-2-传输数据" class="headerlink" title="6.2 传输数据"></a>6.2 传输数据</h2><p>如获取YouTube这个视频，数据包要先到互联网主干，沿着主干到达有对应视频文件的YouTube服务器。数据包从你的计算机跳到YouTube服务器，可能要跳个10次。</p>
+<ol>
+<li>IP协议：如果数据很大，数据会被拆成多个小数据包，而不是整个文件发过来。数据包要在互联网上传输，要符合互联网协议的标准，简称IP。IP属于底层协议，<strong>数据包的头部只有目标地址</strong>，头部存关于数据的数据，也叫元数据。<strong>在此层并不知道要交给哪个程序。</strong></li>
+<li>UDP协议-用户数据报协议：UDP头部位于数据前面，头部包含有用的信息。如端口号，每个想访问网络的程序都要向操作系统申请一个端口号。当一个数据包到达时，接收方的操作系统会读UDP头部，读里面的端口号，然后转到对应的程序中。<ul>
+<li><strong>IP负责把数据包送到正确的计算机，UDP负责把数据包送到正确的程序。</strong></li>
+<li>UDP不提供数据修复或重发的机制，但它还是包含了一个校验和Checksum这样的错误检查机制，有助于判断数据包的完整性，并在必要时丢弃损坏的数据包。对于一些视频流和音频流，数据丢失卡顿，用户依然可以接受，所以采用更快的UDP传输，但是邮件这种不能出现数据丢失的，需要TCP可靠传输。</li>
+</ul>
+</li>
+<li>TCP协议-传输控制协议<ul>
+<li>三次握手</li>
+<li>四次挥手</li>
+</ul>
+</li>
+</ol>
+<h2 id="6-3-DNS域名系统"><a href="#6-3-DNS域名系统" class="headerlink" title="6. 3 DNS域名系统"></a>6. 3 DNS域名系统</h2><p>由于IP地址具有不方便记忆并且不能显示地址组织的名称和性质等缺点，人们设计出了域名，我们只需要记住要访问的网页的域名即可，网络会把我们访问的域名通过DNS查表，得到 域名对应的IP地址，然后访问真实的IP。</p>
+<p>一般DNS服务器都是由ISP提供的。当你在浏览器中输入网站域名时，浏览器就会去访问DNS服务器，DNS就会去查表，如果域名存在，则会返回浏览器对应IP地址，然后浏览器就会给这个IP地址发送TCP请求。</p>
+<h2 id="6-4-OSI-开发式系统互联通信参考模型"><a href="#6-4-OSI-开发式系统互联通信参考模型" class="headerlink" title="6.4 OSI-开发式系统互联通信参考模型"></a>6.4 OSI-开发式系统互联通信参考模型</h2><p>物理层（光纤电脑），数据链路层（二进制电信号光信号），网络层（IP协议），传输层（UDP,TCP），会话层，表示层（Presentation Layer）和应用层（Application Layer）</p>
+<h2 id="6-5-万维网"><a href="#6-5-万维网" class="headerlink" title="6.5 万维网"></a>6.5 万维网</h2><p>万维网和互联网的区别？</p>
+<ol>
+<li>互联网（Internet）：互联网是许多不同的网络通过标准的通讯协议（TCP&#x2F;IP）相互连接而形成的全球性网络系统。它是一种基础设施，就像高速公路网络一样，用于传输各种信息和服务，例如电子邮件、文件传输（FTP）、在线聊天 IM ，万维网等。</li>
+<li>万维网（WWW，World Wide Web）：万维网则是通过HTTP（超文本传输协议）在互联网上共享和导航超文本信息的一个服务。它是互联网上最常见的一种使用方式，通常我们在浏览器中输入的网址（URL）就是在访问万维网。它使用HTML语言编写网页，并通过链接（URL）将一个网页与另一个网页连接起来。</li>
+</ol>
+<p>总的来说，万维网是互联网提供的众多服务之一。我们可以理解为互联网是底层的基础设施，而万维网则是构建在这个基础设施上的一种应用服务。</p>
+<h1 id="7-计算机安全"><a href="#7-计算机安全" class="headerlink" title="7 计算机安全"></a>7 计算机安全</h1><h2 id="7-1-计算机安全目标"><a href="#7-1-计算机安全目标" class="headerlink" title="7.1 计算机安全目标"></a>7.1 计算机安全目标</h2><p>计算机安全的范围和计算能力的发展速度一样快，我们可以把计算机安全，看成是保护系统和数据的<strong>保密性、完整性和可用性</strong>。</p>
+<ul>
+<li><strong>保密性（Secrecy）：</strong>只有有权限的人才能<strong>读取</strong>计算机系统和数据，比如黑客泄露别人的信用卡信息，就是攻击保密性。</li>
+<li><strong>完整性（Integrity）：</strong>只有有权限的人才能<strong>修改</strong>系统和数据，比如黑客假冒你发送邮件，就是攻击完整性。</li>
+<li><strong>可用性（Availability）：</strong>有权限的人应该<strong>随时可以访问</strong>系统和数据，<strong>拒绝服务攻击（DDOS</strong>）就是黑客发送大量的假请求到服务器上，使得网站很慢或者直接挂掉，这就是攻击可用性。</li>
+</ul>
+<p>为了实现这三个目标，安全专家会从抽象层面想想敌人可能是谁，这个称为<strong>威胁模型分析（Threat Model）</strong>。模型会对攻击者有个大致的描述：能力如何、目标是什么、可能使用什么手段。攻击手段又称为<strong>攻击矢量（Attack Vector）</strong>。威胁模型分析能够让你为特定情境做好准备，不被可能的攻击手段所淹没。换句话说，要怎么保护，具体看要对抗谁。</p>
+<h2 id="7-2-身份认证"><a href="#7-2-身份认证" class="headerlink" title="7.2 身份认证"></a>7.2 身份认证</h2><p>有很多保护计算机系统、网络和数据的方法。很多安全问题可以总结成<strong>两个问题</strong>：</p>
+<ol>
+<li>你是谁？</li>
+<li>你能访问什么？</li>
+</ol>
+<p>权限应该给适合的人而拒绝错误的人，所以为了区分谁是谁，我们使用<strong>身份认证（Authentication）</strong>来让计算机得知使用者是谁。通常身份认证有三种，各有利弊：</p>
+<h2 id="7-3-权限校验"><a href="#7-3-权限校验" class="headerlink" title="7.3 权限校验"></a>7.3 权限校验</h2><p>当系统知道了你是谁，接下来就需要知道你能访问什么，这个称为<strong>访问控制（Access Control）</strong>，因此需要一个规范，来说明谁能访问什么、修改什么和使用什么。这个可以通过<strong>权限（Permission）</strong>或<strong>访问控制列表（Access Control List，ACL）</strong>来实现，其中描述了用户对每个文件、文件夹和程序的访问权限。</p>
+<p>读权限：允许用户查看文件内容。</p>
+<p>写权限：允许用户修改文件内容。</p>
+<p>执行权限：运行用户运行文件。</p>
+<h2 id="7-4-黑客与攻击"><a href="#7-4-黑客与攻击" class="headerlink" title="7.4 黑客与攻击"></a>7.4 黑客与攻击</h2><ol>
+<li><strong>缓冲区溢出（Buffer Overflow）</strong>：在登录界面要输入用户名和密码，在幕后，系统用缓冲区存输入的值，假设缓冲区大小是10，前后有其它数据，如果超过10个限制，数据会覆盖数据。可能导致系统崩溃。还可以在is_admin的值改成true，这样就能绕过登录，劫持整个系统。可以在缓冲区后，留一些不用的空间，跟踪里面的值，看书否变化。</li>
+<li><strong>代码注入（Code Injection）</strong>：在一个页面输入用户名和密码，服务器会将该内容拿去数据库比对，如果被黑客攻击，会将用户名栏输入“用户名”DROP TABLE users； 如果服务器没有做保护，会在执行完用户名校验后清空数据表。</li>
+<li><strong>僵尸网络（Botnet）</strong>：发大量垃圾邮件等，用别人电脑的计算能力来挖比特币，或发起DDOS来攻击服务器。DDOS就是僵尸网络里的所有电脑发一大堆垃圾信息到服务器上，造成服务器的阻塞。</li>
+</ol>
+<h2 id="7-5-加密"><a href="#7-5-加密" class="headerlink" title="7.5 加密"></a>7.5 加密</h2><ol>
+<li><h4 id="数字签名"><a href="#数字签名" class="headerlink" title="数字签名"></a>数字签名</h4><ul>
+<li>数字签名，简单来说就是通过提供 可鉴别 的 数字信息 验证 自身身份 的一种方式。</li>
+<li>一套 数字签名 通常定义两种 互补 的运算，一个用于 签名，另一个用于 验证。分别由 发送者 持有能够 代表自己身份 的 私钥 (私钥不可泄露),由 接受者 持有与私钥对应的 公钥 ，能够在 接受 到来自发送者信息时用于 验证 其身份。</li>
+</ul>
+</li>
+<li><p>加密与解密术语</p>
+<ul>
+<li>加密：<strong>数据加密</strong> 的基本过程，就是对原来为 <strong>明文</strong> 的文件或数据按 <strong>某种算法</strong> 进行处理，使其成为 <strong>不可读</strong> 的一段代码，通常称为 <strong>“密文”</strong>。通过这样的途径，来达到 <strong>保护数据</strong> 不被 <strong>非法人窃取</strong>、阅读的目的</li>
+<li>解密：<strong>加密</strong> 的 <strong>逆过程</strong> 为 <strong>解密</strong>，即将该 <strong>编码信息</strong> 转化为其 <strong>原来数据</strong> 的过程</li>
+<li>对称加密和非对称加密和不需要密钥的散列算法<ul>
+<li>常见的 <strong>对称加密</strong> 算法主要有 <code>DES</code>、<code>3DES</code>、<code>AES</code> 等，</li>
+<li>常见的 <strong>非对称算法</strong> 主要有 <code>RSA</code>、<code>DSA</code> 等，</li>
+<li><strong>非对称加密算法</strong>，又称为 <strong>公开密钥加密算法</strong>。它需要两个密钥，一个称为 <strong>公开密钥</strong> (<code>public key</code>)，即 <strong>公钥</strong>，另一个称为 <strong>私有密钥</strong> (<code>private key</code>)，即 <strong>私钥</strong>。因为 <strong>加密</strong> 和 <strong>解密</strong> 使用的是两个不同的密钥，所以这种算法称为 <strong>非对称加密算法</strong>。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="8-机器学习和人工智能"><a href="#8-机器学习和人工智能" class="headerlink" title="8 机器学习和人工智能"></a>8 机器学习和人工智能</h1><ul>
+<li>分类器：做分类的算法。<ul>
+<li>特征用来帮助分类的值。</li>
+<li>需要不断训练</li>
+<li>对于比较难以区分的，可以加上新条件，即决策边界。</li>
+<li>最大化正确分类+最小化错误分类。</li>
+</ul>
+</li>
+<li>决策树<ul>
+<li>需要选择什么特征来分类。</li>
+<li>每个特征用什么值。</li>
+</ul>
+</li>
+<li>决策树和支持向量机这样的技术发源自统计学。</li>
+<li>深度学习</li>
+</ul>
+<h1 id="9-计算机视觉"><a href="#9-计算机视觉" class="headerlink" title="9 计算机视觉"></a>9 计算机视觉</h1><ul>
+<li>图像是像素网格，每个像素的颜色通过三个基色定义：红，绿，蓝。通过组合三种颜色的强度可以得到任何颜色，也叫RGB值。</li>
+<li>颜色跟踪算法是一个个像素搜索。</li>
+<li>物体的边缘，是多个像素组成的。为识别这些特征，算法要一块块像素来处理，</li>
+</ul>
+<h1 id="10-然语言处理：NLP"><a href="#10-然语言处理：NLP" class="headerlink" title="10 然语言处理：NLP"></a>10 然语言处理：NLP</h1><p>名词，代词，冠词，动词，形容词，副词，介词，连词，感叹词。</p>
+<p>使用短语结构规则用于计算机，句子可以由一个名词短语和一个动词短语组成，可以给一门语言指定出一堆规则，用这些规则，可以做出分析树。如何采集声音，信号来自麦克风内部隔膜震动的频率，横轴是时间，竖轴是隔膜移动的幅度。我们换一种图谱，横轴还是时间，竖轴是不同频率的振幅，颜色越亮，那个频率的声音越大</p>
+<h1 id="11-机器人"><a href="#11-机器人" class="headerlink" title="11 机器人"></a>11 机器人</h1><h1 id="12-奇点，天网，计算机的未来"><a href="#12-奇点，天网，计算机的未来" class="headerlink" title="12 奇点，天网，计算机的未来"></a>12 奇点，天网，计算机的未来</h1>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2024/02/09/%E5%87%BA%E9%97%A8%E5%BF%85%E5%A4%87/" rel="prev" title="出门必备">
+                  <i class="fa fa-angle-left"></i> 出门必备
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Owen he</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
